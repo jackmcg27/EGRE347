@@ -1,0 +1,27 @@
+Circuit Database Documentation
+------------------------------
+By: Jack McGowan
+EGRE347, Spring 2022
+
+The code for this project is seperated into 2 Python files. The first is
+main.py. This file serves as the driver. It runs indefinitly and contatins
+the list of all of the circuits. It prompts the user for a slection based on the
+list of options and based on their selection, calls the proper functions needed
+to perform that option. The second file is transferFunctions.py. This file contains
+all of the functions needed to perform the options. These functions range from creating new
+circuits to priting things out. All of the heavy lifting is done here. The code functions 
+based on a list of dictionaries that stores all needed information on the circuits.
+Either a full dictionary is passed to a function or part of one. The function then uses data
+from the dictionary to perform operations such as calcualting outputs, graphing the magnitude,
+and displaying the transfer function. Each of these options is in its own function. Some of these
+functions ahve subfunctions to help perform the operation or some call each other. Overall, the
+list of saved circuits contains all of the data to perform any of the provided tasks, and the functions
+in transferFunctions.py perform all of the options.
+
+Reason for 2 videos:
+Not shown in the main video is the LEDs due to not being able to screen record most of the functionality 
+and then also record the real life physical pi. Given the normal pins that we have used this semester 
+(red = 24, yellow = 5, green = 16), the LEDs will light up and stay on while working with particular
+circuits. If the circuit is a lowpass, the green LED comes on. Yellow is for the band pass, and red is
+for high pass circuits. I added a second video showing the pi as it calculates the magnitude plot for one
+of each kind of function.
